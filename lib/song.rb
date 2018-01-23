@@ -7,7 +7,7 @@ class Song
 
   def self.new_by_filename(file)
     song = Song.new(file)
-    song.artist.name
+    song.name
   end
 
 end
