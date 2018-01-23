@@ -10,6 +10,4 @@ class Song
     self.name
   end
 
-
-
 end
