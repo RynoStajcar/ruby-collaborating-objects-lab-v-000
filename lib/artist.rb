@@ -24,20 +24,6 @@ class Artist
     @@all << self
   end
 
-  def self.create_by_name(name)
-    song = self.new
-    song.save
-    song.name = name
-    song
-  end
-
-  def self.find_by_name(name)
-    self.all.detect do |song|
-      if song.name == name
-        song.name
-      end
-    end
-  end
 
   def self.find_or_create_by_name(name)
     self.all.detect do |artist|
@@ -47,6 +33,7 @@ class Artist
         song = self.new
         song.save
         song.name = name
+      end
     end
   end
 
