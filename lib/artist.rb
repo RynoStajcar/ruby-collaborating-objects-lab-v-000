@@ -30,9 +30,8 @@ class Artist
       if artist.name == name
         artist.name
       else
-        song = self.new
+        song = self.new(name)
         song.save
-        song.name = name
       end
     end
   end
