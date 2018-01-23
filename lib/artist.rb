@@ -8,12 +8,12 @@ class Artist
     @songs = []
   end
 
-  def self.songs
+  def songs
     @songs
   end
 
   def self.save
-    @@all
+    @@all << self.new
   end
 
   def find_or_create_by_name
